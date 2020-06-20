@@ -1,0 +1,89 @@
+
+//=========Responsive Text===========//
+:root{
+  color: $textCol1;
+  font-size: 14px;
+}
+@media (min-width:600px){
+  :root{
+    font-size: 18px;
+  }
+}
+@media (min-width:900px){
+  :root{
+    font-size: 20px;
+  }
+}
+
+body {
+  @include font-family(Lato);
+  
+  background: url(../img/bg-1.1.svg) no-repeat;
+  background-size: 100%;
+  background-color: $bacCol1;
+  box-sizing: border-box;
+  
+  p {
+    color: $textCol2;
+  }
+}
+
+main{
+  width:90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+header {
+  font-size: 0.8rem;
+  padding:0.4em;
+}
+main {
+  font-size:1rem;
+}
+
+section {
+  padding: 0.8em;
+  padding-bottom: 2em;
+  margin-bottom: 1em;
+}
+
+footer {
+  font-size: 1rem;
+  padding:0.4em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 2rem;
+}
+
+//================Links==================
+a {
+  color: $colSec1;
+  text-decoration: none;
+}
+
+//============Buttons===========
+button {
+  background-color: $bacCol2;
+  border:none;
+  box-shadow: none;
+}
+
+.btn {
+  background-color: $colSec1;
+  border-radius: 3px;
+  padding: 0.5rem;
+  color: $textCol-light;
+}
+
+//=========List=========
+li {
+  list-style: none;
+}
+
+

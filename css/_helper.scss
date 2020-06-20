@@ -1,0 +1,107 @@
+//=====================Variables==================
+
+//Background
+$bacCol1: #f6f5fa;
+$bacCol2: #fcfcfd;
+
+//Primary color:
+$colPri1: #666cdc;
+
+//Secondary color
+$colSec1: #44d298;
+$colSec2: #96db5d;
+
+//Accent
+$colAc1: #8ecff6;
+$colAc2: #eacf77;
+
+//Text Color
+$textCol1: #2b2b2b;
+$textCol2: #717173;
+$textCol3: #656cdc;
+$textCol-light: #fcfcfd;
+
+//Footer
+$fooB: #2b2b2b;
+$footxt: #717173;
+
+//Fonts
+$fontPri: Lato;
+
+//================Mix-ins===============
+ @mixin font-family($font) {
+   font-family: $font, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ @mixin transition {
+   transition: all 0.25s ease-in-out;   
+ }
+
+ @mixin abs-pos {
+   position: fixed;
+   top:0;
+   left:0;
+   width: 100%;
+   z-index: 9999;
+   font-size: 0.7rem;
+ }
+
+ @mixin card {
+  
+  background: $bacCol2;
+  border-radius: 10px;
+	box-shadow: 0 0 2px 0 rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
+}
+
+@mixin underline {
+  content: '';
+  display: block;
+  border-bottom: 3px solid $textCol3;
+  width: 1em;
+  position: relative;
+  left: 0;
+  transition: 0.25s ease;
+}
+
+@mixin transform {
+  transform: translate(1em);
+  transform: scale(2);
+  transform: rotateZ(90deg);
+}
+@mixin transition {
+  transition: all 0.5s ease-in-out;
+}
+
+
+@mixin keyframes {
+  .object {
+    animation-name: animationx;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  @keyframes animationx {
+    from{ tranform: translateX(-200)}
+    to{ tranform: translateX(1000px)}
+  }
+}
+
+//================Keyframes================
+
+@keyframes enlarge{
+  from{ transform: scale(1)}
+  to{transform: scale(1.1)}
+
+}
+@keyframes swirl {
+  0%{transform: rotate(0deg)}
+  100%{transform: rotate(360deg)}
+}
+
+@keyframes navi {
+  0%{transform: translateX(1000px)}
+  100%{transform: translateX(0px)}
+}
