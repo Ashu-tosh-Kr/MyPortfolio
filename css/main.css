@@ -920,8 +920,11 @@ header .show-nav {
 
 footer {
   background-color: #2b2b2b;
-  color: #717173;
   text-align: center;
+}
+
+footer p {
+  color: #fff;
 }
 
 footer a {

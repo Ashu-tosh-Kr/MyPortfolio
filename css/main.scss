@@ -303,9 +303,11 @@ header {
 
 footer {
   background-color: $fooB;
-  color: #fff;
   text-align: center;
   
+  p {
+    color: #fff;
+  }
   a {
     padding: 0.2rem;;
   }
