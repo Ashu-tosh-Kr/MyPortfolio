@@ -7,31 +7,32 @@
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/2030f71cff.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>YouCode</title>
 </head>
 
 <body>
+  
   <header>
-    <h1>YouCode</h1>
-    <button onclick="navi()"><i class="fa fa-bars fa-2x"></i></button>
-    <nav>
-        <a href="#">Remote Work</a>
-        <a href="#">Customers</a>
-        <a href="#">Blog</a>
-        <a href="#">Login</a>
-        <a href="#">Get Started</a>
+    <h1>My Portfolio</h1>
+    <button><i class="fa fa-bars fa-2x"></i></button>
+    <nav class="nav">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#what-i-do">What I Do</a>
+        <a href="#work">Work</a>
+        <a href="#form-main">Contact</a>
     </nav>
   </header>
   <main>
-    <section class="home">
+    <!-- <section class="home">
       <div>
         <h2><span>Actionable Metric</span> for Engineering Leaders</h2>
         <p>Velocity turns data from commits and pull requests into the insights you need to make lasting improvements to your team’s productivity.</p>
         <a class="btn" href="#">Get Started <i class="fa fa-arrow-right"></i></a>
       </div>
-      
-    </section>
-    <section class="trusted-by">
+    </section> -->
+    <!-- <section class="trusted-by">
       <h2>Trusted By</h2>
       <div>
         <img src="img/logo1.svg" alt="a">
@@ -39,43 +40,57 @@
         <img src="img/logo3.svg" alt="c">
         <img src="img/logo4.svg" alt="d">
       </div>
+    </section> -->
+    <section class="home">
+      <img src="img/clown.jpg" alt="">
+      <h1>Hi, I'm<br><strong>Ashutosh Kumar</strong></h1>
+      <h2>Front-End Dev</h2>
     </section>
-    <section class="what-we-do">
-      <h2>What We Do</h2>
-      <h3>Engineering Intelligence shines a light on your software development process.</h3>
+    <section class="about-me" id='about' data-aos= 'fade-down'>
+      <h2>Who I Am</h2>
+      <h3>A Web-Developer, Graphics Designer and a Competitive-Coding Enthusiast</h3>
       <div>
-        <p>Software engineering is a discipline with largely invisible parts. To get the full picture of how your team is working and where they need help, you need to disrupt engineers, scan source control systems, and pore over ticket comments</p>
-        <p>An Engineering Intelligence platform allows you to quickly and accurately diagnose where work gets stuck, who needs help, and where the greatest opportunities lie for continuous improvement.</p>
-        <a class="btn" href="">Learn More <i class="fa fa-arrow-right"></i></a>
+        <p>Coding is fun to me. The two things that I like about coding is the problem solving and creating aspects, something that I've loved doing my entire life. And graphics designing helps me scratch that creative itch</p>
+        <p>I was born in Bihar. My Dad had a transferable job so we moved around quite a bit and then finally settled in Kolkata. I'm currrently pursuing my undergrad in Computer Science from SRM Chennai.</p>
+        <!-- <a class="btn" href="">Learn More <i class="fa fa-arrow-right"></i></a> -->
       </div>
     </section>
-    <section class="align">
-      <h2>Align</h2>
-      <h3>Velocity benefits every member of your team.</h3>
+    <section class="what-i-do" id='what-i-do' data-aos= 'fade-right'>
+      <h2>Hobbies And Interests</h2>
+      <h3>Only productive hobbies included ;)</h3>
       <div>
-        <section class="managers">
-          <h4>Managers</h4>
-          <p>See patterns or anti–patterns in efficiency, and make changes that lead to long–term productivity gains</p>
-          <a href="#">Read Benefits</a>
+        <section class="wev-dev" data-aos= 'fade-down-left'>
+          <h4>Web-Dev</h4>
+          <div>
+            <img src="img/web-page.svg" alt="">
+            <p>I'm well versed with HTML and CSS. I can make beautiful static websites which are both creative yet legible and user-friendly and have great accessibility.</p>
+          </div>
         </section>
-        <section class="engineers">
-          <h4>Engineers</h4>
-          <p>Align with managers on success metrics, advocate for yourself and discover new opportunities for professional growth</p>
-          <a href="#">Read Benefits</a>
+        <section class="graphics-design" data-aos= 'fade-down-left'>
+          <h4>Graphics Design</h4>
+          <div>
+            <img src="img/graphics-design.svg" alt="">
+            <p>To be clear, I havent done any professional graphics design work ever, it's a hobby which comes in handy in alot of personal projects such as this.</p>
+          </div>
         </section>
-        <section class="executives">
-          <h4>Executives</h4>
-          <p>Look at objective data to understand the progress and constraints of the engineering department</p>
-          <a href="#">Read Benefits</a>
+        <section class="painting" data-aos= 'fade-down-left'>
+          <h4>Painting</h4>
+          <div>
+            <img src="img/paint-brush.svg" alt="">
+            <p>This has been my thing since childhoon, although I don't paint and sketch as much as I used to back in the day, every once in a while I etch something down.</p>
+          </div>
         </section>
-        <section class="product-leaders">
-          <h4>Product Leaders</h4>
-          <p>Metrics serve as a common language to improve communication and risk identification</p>
-          <a href="#">Read Benefits</a>
+        <section class="boxing" data-aos= 'fade-down-left'>
+          <h4>Boxing</h4>
+          <div>
+            <img src="img/boxing-gloves.svg" alt="">
+            <p>Something I picked up a year ago in college. I've always loved combat sports. What can I say, it gets my blood pumping and is hella fun. </p>
+          </div>
+          
         </section>
       </div>
     </section>
-    <section class="integration">
+    <!-- <section class="integration">
       <h2>Velocity Integrates With Tools You're Already Using</h2>
       <div>
         <span><i class="fab fa-github fa-3x"></i><br>GitHub</span>
@@ -83,59 +98,99 @@
         <span><i class="fab fa-youtube fa-3x"></i><br>YouTube</span>
         <span><i class="fab fa-instagram fa-3x"></i><br>Instagram</span>
       </div>
-    </section>
-    <section class="blog">
-      <h2>Our Blog</h2>
-      <h3>Read More About Data Driven Engineering</h3>
+    </section> -->
+    <section class="my-work" id='work'>
+      <h2>My Work</h2>
+      <!--<h3>Read More About Data Driven Engineering</h3>
       <div>
         <section>
           <h4>Announcing our Engineering Leadership Summit: Virtual Edition</h4>
           <p>Over the course of six weeks, we’ll be hosting a series of remote fireside chats with senior engineering leaders from a range of industries.</p>
-          <a href="See What's Inside"></a>
+          <a href="#"></a>
         </section>
         <section>
           <h4>Code Climate Raises $8.5M in Series B Funding</h4>
           <p>We’re building the first single source of truth for software development organizations to help them achieve engineering excellence</p>
-          <a href="See What's Inside"></a>
+          <a href="#"></a>
         </section>
         <section>
           <h4>The Engineering Intelligence Managers Need is Now Free, Forever</h4>
           <p>Announcing the launch of Velocity for Teams, a new lightweight version of our flagship engineering analytics platform, designed specifically for frontline managers</p>
-          <a href="See What's Inside"></a>
+          <a href="#"></a>
         </section>
-      </div>
+      </div> -->
+      <section class="container" data-aos= 'flip-left'>
+        <!-- title -->
+        <div class="title">
+          <h3>our reviews</h3>
+        </div>
+        <!-- review -->
+        <article class="review">
+          <div class="img-container">
+            <img src="#" id="person-img" alt="" />
+          </div>
+          <h4 id="author">random project</h4>
+          <p id="job">random caption</p>
+          <p id="info">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+            Iste, doloremque nihil?
+          </p>
+          <!-- prev next buttons-->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <!-- random button -->
+          <!-- <button class="random-btn">surprise me</button> -->
+        </article>
+      </section>
     </section>
     
   </main>
-  <section class="call-to-action">
-    <div>
-      <h2>Start Your Free Trial</h2>
-      <p>See what Velocity reveals about your productivity and discover opportunities to improve your processes, people and code.</p>
-      <a class="btn" href="#">Get Started <i class="fa fa-arrow-right"></i></a>
+  <div id="form-main" data-aos= 'fade-down'>
+    <h2>Contact Me</h2>
+    <div id="form-div">
+      <form class="form" id="form1">
+        
+        <p class="name">
+          <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" />
+        </p>
+        
+        <p class="email">
+          <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
+        </p>
+        
+        <p class="text">
+          <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+        </p>
+        
+        
+        <div class="submit">
+          <div class="ease"></div>
+          <input type="submit" value="SEND" id="button-blue"/>
+        </div>
+      </form>
     </div>
-  </section>
+  </div>
+  
   <footer>
-    <nav>
-      <div class="about">
-        <h4>About Us</h4>
-        <ul>
-          <li>Our Goal</li>
-          <li>Blog</li>
-          <li>Donate</li>
-        </ul>
-      </div>
-      <div class="contact">
-        <h4>Contact Us</h4>
-        <ul>
-          <li>Ph-Number</li>
-          <li>E-mail</li>
-          <li>Address</li>
-        </ul>
-      </div>
-    </nav>
-    <span>&copy; 2020 YouCode, Inc</span>
+    <p>I'm Social</p>
+    <a href="https://www.instagram.com/164/"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/an0164/"><i class="fa fa-linkedin"></i></a>
+    <a href="https://github.com2224"><i class="fa fa-github"></i></a>
   </footer>
-  <!-- <a href="#"><i class="fa fa-msg"></i></a> -->
   <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 200,
+      duration: 1000
+    });
+  </script>
 </body>
 </html>

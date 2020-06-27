@@ -3,6 +3,7 @@
 :root{
   color: $textCol1;
   font-size: 14px;
+  scroll-behavior: smooth ;
 }
 @media (min-width:600px){
   :root{
@@ -22,16 +23,22 @@ body {
   background-size: 100%;
   background-color: $bacCol1;
   box-sizing: border-box;
+  // overflow: hidden;
   
   p {
     color: $textCol2;
   }
 }
+// .container {
+//   overflow-y: scroll;
+//   scroll-behavior: smooth;
+// }
 
 main{
   width:90%;
   max-width: 960px;
   margin: 0 auto;
+  
 }
 
 
@@ -56,9 +63,11 @@ footer {
 
 h2 {
   font-size: 2rem;
+  letter-spacing: 1rem;
 }
 h3 {
   font-size: 2rem;
+  font-weight: 100;
 }
 
 //================Links==================
